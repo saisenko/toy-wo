@@ -1,0 +1,27 @@
+.mainContainer {
+    margin: 4px 5px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialMedia {
+    color: black;
+    margin-top: 10px;
+}
+
+.socialMediaIcon:hover {
+    cursor: pointer;
+}
+
+.socialMediaIcon {
+    font-size: 24px;
+    margin: 5px 15px;
+}
+
+ul {
+    list-style: none;
+}

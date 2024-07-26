@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns {
+    min-width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.btns Button {
+    padding: 10px;
+    min-height: 50px;
+}
+
+.backBtn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: white;
+    background-color: rgb(55, 105, 250);
+
+    margin: 10px 0 0 10px;
+}

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    padding: 10px;
+    margin: 3px 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    /* box-shadow: 0 0 15px hsla(180, 95%, 60%, 0.5); */
+}
+
+.siteLogo img {
+    margin: 0 5px;
+    max-height: 50px;
+}
+
+.siteSearchbar {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 15px;
+    align-items: center;
+    padding: 10px;
+}
+
+.searchBox {
+    outline: none;
+    border: none;
+    min-width: 400px;
+}
+
+.searchBox:focus {
+    border: 1px solid transparent;
+}
+
+
+.siteUser {
+    background-color: rgb(55, 105, 250);
+    color: white;
+
+    min-height: 50px;
+    min-width: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.siteUser:hover {
+    background-color: rgb(20, 10, 180);
+    transition: background-color 0.3s ease;
+}

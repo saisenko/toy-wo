@@ -1,0 +1,21 @@
+.Button {
+    background-color: rgb(55, 105, 250);
+    color: white;
+
+    border: none;
+    border-radius: 15px;
+
+    margin: 5px;
+    padding: 5px 15px;
+    font-size: large;
+    min-width: 100px;
+
+    transition: transform 0.5s;
+
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.Button:hover {
+    background-color: rgb(20, 10, 180);
+}

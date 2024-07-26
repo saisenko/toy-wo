@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.imgContainer {
+    /* background-color: rgb(20, 10, 180); */
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+}
+
+.imgContainer img {
+    padding: 10px;
+    max-height: 250px;
+}
+
+Button:hover {
+    background-color: rgb(20, 10, 180);
+    transform: none;
+    transition: none;
+}
