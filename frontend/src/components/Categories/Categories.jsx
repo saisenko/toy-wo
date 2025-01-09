@@ -2,24 +2,23 @@ import styles from './Categories.module.css'
 
 function Categories() {
     return (
-        <>
-            <div className={styles.contentContainer}>
-                <div className={styles.categoriesDropdown}>
-                    <h2 className={styles.options}>Categories <i className="fa-solid fa-list"></i></h2>
-                    <div className={styles.categoriesDropdownContent}>
-                        <a className={styles.categoriesOption} href="#">Wooden Toys</a>
-                        <a className={styles.categoriesOption} href="#">Woolen Toys</a>
-                        <a className={styles.categoriesOption} href="#">Plastic Toys</a>
-                    </div>            
-                </div>
-                <div className={styles.latestGoods}>
-                    <h2 className={styles.options}>Latest Goods <i className="fa-solid fa-store"></i></h2>
-                </div>
-                <div className={styles.bestsellerGoods}>
-                    <h2 className={styles.options}>Bestsellers <i className="fa-solid fa-meteor"></i></h2>
-                </div>
+        <div className={styles.container}>
+            <h1 id={styles.title}>Категорії</h1>
+            <div className={styles.categoriesContainer}>
+                <button className={styles.category}>
+                    <p className={styles.categoryName}>Нічники</p>
+                    <i className="fa-solid fa-moon"></i>
+                </button>
+                <button className={styles.category}>
+                    <p className={styles.categoryName}>Сувеніри/Подарунки</p>
+                    <i className="fa-solid fa-film"></i>
+                </button>
+                <button className={styles.category}>
+                    <p className={styles.categoryName}>Іграшки</p>
+                    <i className="fa-solid fa-rainbow"></i>
+                </button>
             </div>
-        </>
+        </div>
     );
 }
 

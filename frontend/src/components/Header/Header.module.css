@@ -13,7 +13,6 @@ body {
 
     border: 1px solid black;
     border-radius: 15px;
-    /* box-shadow: 0 0 15px hsla(180, 95%, 60%, 0.5); */
 }
 
 .siteLogo img {
@@ -41,7 +40,7 @@ body {
 
 
 .siteUser {
-    background-color: rgb(55, 105, 250);
+    background-color: #77a2ff;
     color: white;
 
     min-height: 50px;
@@ -56,6 +55,6 @@ body {
 }
 
 .siteUser:hover {
-    background-color: rgb(20, 10, 180);
+    background-color: #1951c8;
     transition: background-color 0.3s ease;
 }

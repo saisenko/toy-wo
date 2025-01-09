@@ -23,9 +23,14 @@ function Header() {
                     <i className="fa-solid fa-magnifying-glass" />
                 </div>
                 <div className={styles.siteNavbar}>
-                    <Button>Recent <i className="fa-solid fa-clock"></i></Button>
-                    <Button>Wishlist <i className="fa-solid fa-heart"></i></Button>
-                    <Button>Cart <i className="fa-solid fa-cart-shopping"></i></Button>
+                    <Button>
+                        <p>Бажане</p>
+                        <i className="fa-solid fa-heart"></i>
+                    </Button>
+                    <Button>
+                        <p>Кошик</p>
+                        <i className="fa-solid fa-cart-shopping"></i>
+                    </Button>
                 </div>
                 <div className={styles.siteUser}>
                     <i className="fa-solid fa-user"></i>
