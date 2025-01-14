@@ -1,0 +1,64 @@
+#title {
+    color: #1951c8;
+    font-weight: bold;
+    text-decoration: underline;
+
+    text-align: center;
+
+    display: block;
+    align-self: center;
+
+    padding: 5px 10px;
+
+    border: 5px dotted #1951c8;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden; /* Hide overflow for carousel effect */
+}
+
+.carouselContent {
+    display: flex;
+    gap: 20px; /* Space between products */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.prevButton,
+.nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.prevButton {
+    left: -40px;
+}
+
+.nextButton {
+    right: -40px;
+}
+
+#styles_productContainer {
+    min-width: 200px; /* Ensure products have a fixed size */
+    flex: 1; /* Allow items to grow evenly */
+    text-align: center;
+}
