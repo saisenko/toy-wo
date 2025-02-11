@@ -1,0 +1,38 @@
+.container {
+    border: 5px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    justify-self: center;
+
+    padding: 50px;
+}
+
+.userData {
+    display: flex;
+    flex-direction: row;
+}
+
+#userProfilePic {
+    height: 200px;
+    width: 200px;
+
+    border: 5px solid black;
+    border-radius: 50%;
+
+    margin-right: 20px;
+}
+
+.profileOptions {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+}

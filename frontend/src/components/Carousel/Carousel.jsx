@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Product from '../Product/Product.jsx';
 import styles from './Carousel.module.css'; // Create styles for the carousel
 
-function Carousel({ title, products, visibleCount = 4 }) {
+function Carousel({ title, products, visibleCount = 5 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -30,7 +30,7 @@ function Carousel({ title, products, visibleCount = 4 }) {
     }
 
     return (
-        <>    
+        <div className={styles.container}>    
             <h1 id={styles.title}>{title}</h1>
             <div className={styles.carousel}>
                 <button className={styles.prevButton} onClick={prevSlide}>
@@ -51,7 +51,7 @@ function Carousel({ title, products, visibleCount = 4 }) {
                     &#10095;
                 </button>
             </div>
-        </>
+        </div>
     );
 }
 

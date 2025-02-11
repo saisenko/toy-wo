@@ -18,11 +18,11 @@ function Product({ name, price, image, rating }) {
     );
 }
 
-Product.propTypes = {
-    name: PropTypes.string,
-    price: PropTypes.number,
-    image: PropTypes.string,
-    rating: PropTypes.number
-}
+// Product.propTypes = {
+//     name: PropTypes.string,
+//     price: PropTypes.number,
+//     image: PropTypes.string,
+//     rating: PropTypes.number
+// }
 
 export default Product;

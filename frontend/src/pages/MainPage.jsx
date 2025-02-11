@@ -26,6 +26,42 @@ const products = [
     price: 15.0,
     image: "./img/cheporte-sign-owl.png",
     rating: "***"
+  },
+  {
+    name: "Test Product 5",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
+  },
+  {
+    name: "Test Product 6",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
+  },
+  {
+    name: "Test Product 7",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
+  },
+  {
+    name: "Test Product 8",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
+  },
+  {
+    name: "Test Product 9",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
+  },
+  {
+    name: "Test Product 10",
+    price: 15.0,
+    image: "./img/cheporte-sign-owl.png",
+    rating: "***"
   }
 ];
 

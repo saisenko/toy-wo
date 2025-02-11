@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
 #title {
     color: #1951c8;
     font-weight: bold;
@@ -30,7 +37,7 @@
 }
 
 button {
-    background-color: transparent;
+    background-color: blue;
     border: none;
     font-size: 2rem;
     cursor: pointer;
@@ -50,11 +57,15 @@ button {
 }
 
 .prevButton {
-    left: -40px;
+    background-color: #1951c8;
+    color: white;
+    left: -0.125px;
 }
 
 .nextButton {
-    right: -40px;
+    background-color: #1951c8;
+    color: white;
+    right: -0.125px;
 }
 
 #styles_productContainer {

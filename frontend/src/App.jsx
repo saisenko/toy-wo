@@ -1,5 +1,5 @@
 import MainPage from "./pages/MainPage.jsx";
-// import ProductPage from "./pages/ProductPage/ProductPage.jsx";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
 import Product from "./components/Product/Product.jsx";
 
 import './App.css';
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage/>}/>
           <Route path="/product" element={<Product/>}/>
+          <Route path="/profile" element={<ProfilePage/>}/>
         </Routes>
       </BrowserRouter>
     </>
