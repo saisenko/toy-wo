@@ -1,4 +1,4 @@
-#productContainer {
+.productCard {
     display: inline-flex;
     flex-direction: column;
 
@@ -15,7 +15,7 @@
     max-height: 15rem;
 }
 
-#productName {
+.productName {
     font-size: 20px;
     text-wrap: pretty;
 }
@@ -27,11 +27,11 @@
     margin-bottom: 10px;
 }
 
-#rating, #price {
+.rating, .price {
     margin: 0 15px;
 }
 
-#productImg {
+.productImg {
     max-width: 5rem;
     max-height: 5rem;
 }

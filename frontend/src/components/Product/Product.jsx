@@ -1,28 +1,44 @@
-import PropTypes from 'prop-types';
-
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import styles from './Product.module.css';
-
 import Button from '../Button/Button.jsx';
 
-function Product({ name, price, image, rating }) {
+function Product({ name }) {  // Accept 'name' as a prop for specific product fetching
+    const [products, setProducts] = useState([]);  // Array for multiple products
+
+    useEffect(() => {
+        const endpoint = name ? `/api/products/${name}` : `/api/products`;
+
+        fetch(endpoint)
+            .then(res => res.json())
+            .then(data => setProducts(Array.isArray(data) ? data : [data])) // Ensure data is always an array
+            .catch(err => console.error('Error fetching products:', err));
+    }, [name]);
+
     return (
-        <div id={styles.productContainer}>
-            <h1 id={styles.productName}>{name}</h1>
-            <img id={styles.productImg} src={image} alt="Product Image" />
-            <div className={styles.productInfo}>
-                <p id={styles.rating}>{rating}</p>
-                <p id={styles.price}>{price + " UAH"}</p>
-            </div>
-            <Button>Add to cart</Button>
-        </div>
+        <>
+            {products.map(product => (
+                <div key={product.id} className={styles.productCard}>
+                    <h1 className={styles.productName}>{product.name}</h1>
+                    <img
+                        className={styles.productImg}
+                        src={product.image || "/img/cheporte-sign-owl.png"} // Fallback if no image
+                        alt={product.name}
+                    />
+                    <div className={styles.productInfo}>
+                        <p className={styles.rating}>{product.rating || "No rating"}</p>
+                        <p className={styles.price}>{product.price} UAH</p>
+                    </div>
+                    <Button>Add to Cart</Button>
+                </div>
+            ))}
+        </>
     );
 }
 
-// Product.propTypes = {
-//     name: PropTypes.string,
-//     price: PropTypes.number,
-//     image: PropTypes.string,
-//     rating: PropTypes.number
-// }
+// ✅ PropTypes for validation
+Product.propTypes = {
+    name: PropTypes.string // Optional prop for fetching a specific product
+};
 
 export default Product;
